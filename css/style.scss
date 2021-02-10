@@ -156,3 +156,121 @@ html {
     justify-content: center;
   }
 }
+
+.about {
+  &_wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    width: 81.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+  }
+
+  &__container {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    display: block;
+  }
+
+  &__row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+
+    &.mobile-only {
+      display: none;
+    }
+  }
+}
+
+.name {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacts {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  font-weight: 400;
+  list-style: none outside none;
+  white-space: nowrap;
+
+  @media only screen and (max-width: 1199px) {
+    margin-top: 1em;
+    flex-direction: column;
+  }
+
+  & li {
+    margin-bottom: 0.25rem;
+    margin-right: 1em;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 0;
+      text-align: center;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    & a {
+      font-size: 1.2rem;
+      color: black;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      & .icon {
+        fill: currentColor;
+        height: 1.6rem;
+        vertical-align: text-bottom;
+      }
+
+      &.facebook:hover {
+        color: #3b5998;
+      }
+
+      &.github:hover {
+        color: dimgrey;
+      }
+
+      &.mail:hover {
+        color: dimgrey;
+      }
+
+      &.skype:hover {
+        color: #00aff0;
+      }
+
+      &.linkedin:hover {
+        color: #0077b5;
+      }
+
+      &.telegram:hover {
+        color: #0088cc;
+      }
+
+      &.phone:hover {
+        color: dimgrey;
+      }
+
+      &.website {
+        display: none;
+      }
+    }
+  }
+}
+
+.divider {
+  border-top: 1px solid rgb(222, 222, 222);
+}

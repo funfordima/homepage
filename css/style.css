@@ -39,6 +39,7 @@ html {
   }
 }
 
+/* Main */
 .main {
   overflow: auto;
   z-index: 2;
@@ -195,5 +196,138 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about_wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+  width: 81.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.about__container {
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: block;
+}
+
+.about__row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.about__row.mobile-only {
+  display: none;
+}
+
+.name {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacts {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0.9em;
+  font-weight: 400;
+  list-style: none outside none;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1199px) {
+  .contacts {
+    margin-top: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts li {
+  margin-bottom: 0.25rem;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts li {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.contacts li:before {
+  display: none;
+}
+
+.contacts li a {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.contacts li a .icon {
+  fill: currentColor;
+  height: 1.6rem;
+  vertical-align: text-bottom;
+}
+
+.contacts li a.facebook:hover {
+  color: #3b5998;
+}
+
+.contacts li a.github:hover {
+  color: dimgrey;
+}
+
+.contacts li a.mail:hover {
+  color: dimgrey;
+}
+
+.contacts li a.skype:hover {
+  color: #00aff0;
+}
+
+.contacts li a.linkedin:hover {
+  color: #0077b5;
+}
+
+.contacts li a.telegram:hover {
+  color: #0088cc;
+}
+
+.contacts li a.phone:hover {
+  color: dimgrey;
+}
+
+.contacts li a.website {
+  display: none;
+}
+
+.divider {
+  border-top: 1px solid #dedede;
 }
 /*# sourceMappingURL=style.css.map */
