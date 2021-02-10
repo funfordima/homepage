@@ -330,4 +330,37 @@ html {
 .divider {
   border-top: 1px solid #dedede;
 }
+
+.divider.fat {
+  border-top: 0.5rem solid #0a0a0a;
+  width: 33%;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 4.2rem;
+  letter-spacing: 0.25em;
+}
+
+.subtitle ~ p {
+  font-weight: 300;
+  font-size: 2.1rem;
+  margin-bottom: 0.25em;
+}
+
+.subtitle ~ p:last-child {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  opacity: 0.75;
+}
+
+.subtitle ~ p:last-child a {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.subtitle ~ p:last-child a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
