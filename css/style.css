@@ -1,4 +1,3 @@
-@import url(d:\Site\Lessons\GIT\resume\css\_normalize.css);
 *,
 *:before,
 *:after {
@@ -38,5 +37,163 @@ html {
   .credits {
     display: none;
   }
+}
+
+.main {
+  overflow: auto;
+  z-index: 2;
+  background: white;
+  position: relative;
+}
+
+.header + .main {
+  margin-top: 2rem;
+}
+
+.main:nth-last-child(3) {
+  margin-bottom: 50vh;
+}
+
+.article {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .article {
+    width: 723px;
+    margin-top: calc((100% - 723px) / 2);
+    margin-bottom: calc((100% - 723px) / 2);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .article {
+    width: 933px;
+    margin-top: calc((100% - 933px) / 2);
+    margin-bottom: calc((100% - 933px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .article {
+    width: 1127px;
+    margin-top: calc((100% - 1127px) / 2);
+    margin-bottom: calc((100% - 1127px) / 2);
+  }
+}
+
+.page {
+  position: relative;
+  padding: 3em;
+  background: white;
+  border-color: midnightblue;
+  -webkit-box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+          box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+
+.page:hover {
+  -webkit-box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+          box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+}
+
+.page:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  right: 2em;
+  bottom: 2em;
+  border-color: inherit;
+  border-width: 1em;
+  border-style: solid;
+  pointer-events: none;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.page__content {
+  padding: 0;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.row {
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.avatar {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  max-width: 15rem;
+  width: 100%;
+}
+
+.avatar_wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  width: 18.75% !important;
+  display: inline-block;
+  width: 6.25%;
+  vertical-align: top;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .avatar_wrapper {
+    padding: 0;
+  }
+}
+
+.avatar__container {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
