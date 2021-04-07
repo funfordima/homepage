@@ -708,7 +708,8 @@ ol.inverted > li:before {
 }
 
 /* Resume */
-#resume {
+#resume,
+#restaurant {
   color: inherit;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -718,11 +719,13 @@ ol.inverted > li:before {
   display: inline-block;
 }
 
-#resume:hover {
+#resume:hover,
+#restaurant:hover {
   opacity: 1;
 }
 
-#resume .dots {
+#resume .dots,
+#restaurant .dots {
   background: #808080;
   color: white;
   padding: 0 0.2em;
@@ -734,7 +737,8 @@ ol.inverted > li:before {
   margin-right: 0.3em;
 }
 
-#resume .dots .dot {
+#resume .dots .dot,
+#restaurant .dots .dot {
   float: left;
   height: 0.45em;
   width: 0.45em;
@@ -744,7 +748,8 @@ ol.inverted > li:before {
   vertical-align: top;
 }
 
-#resume .dots .dot:not(:last-child) {
+#resume .dots .dot:not(:last-child),
+#restaurant .dots .dot:not(:last-child) {
   margin-right: 0.3em;
 }
 

@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="My very own personal website.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/static/favicon-16x16.png">
+  <link rel="manifest" href="./assets/static/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="./css/_normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Dima Litvinov &mdash; Résumé</title>
@@ -21,6 +27,21 @@
       <img src="./assets/photos/5.jpg" alt="Me with some friends">
       <img src="./assets/photos/6.jpg" alt="Me and Oksana">
       <img src="./assets/photos/7.jpg" alt="Me and my mom and dad">
+    </div>
+    </dialog>
+  <!-- Restaurant -->
+  <dialog id="restaurant__photos">
+    <a href="#restaurant" title="Hide restaurant photos" class="close">Close</a>
+    <div class="photos">
+      <img src="./assets/photos/restaurant/1.jpg" alt="How it was?!">
+      <img src="./assets/photos/restaurant/2.jpg" alt="This is how it all started">
+      <img src="./assets/photos/restaurant/3.jpg" alt="There was a lot of work">
+      <img src="./assets/photos/restaurant/4.jpg" alt="Some chairs">
+      <img src="./assets/photos/restaurant/5.jpg" alt="And equipment">
+      <img src="./assets/photos/restaurant/6.jpg" alt="This is the heart of Georgian cuisine">
+      <img src="./assets/photos/restaurant/7.jpg" alt="It's nice to look at the finished result">
+      <img src="./assets/photos/restaurant/8.jpg" alt="Some wine">
+      <img src="./assets/photos/restaurant/9.jpg" alt="Me and my team">
     </div>
     </dialog>
   <!-- Header -->
@@ -92,7 +113,7 @@
 													<path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
 													</path>
 												</svg>
-                        <span>dima_litvinov</span>
+                        <span>shaggybii</span>
                       </a>
                     </li>
                     <li>
@@ -163,11 +184,11 @@
                       <em>
                         15
                         <sup>st</sup>
-                        September 2020 – present
+                        February 2021 – present
                       </em>
                     </p>
                     <p>
-                      <strong>Studied</strong>
+                      <strong>Student</strong>
                       at 
                       <strong>
                         <a href="https://rs.school/" rel="external">
@@ -179,7 +200,7 @@
                       <li class="details">
                         <input type="checkbox" id="project-4-dependencies" />
                         <label for="project-4-dependencies" class="summary">
-                          build, test, and deploy an application written with React + TS → Node.js + Express + Google Firebase
+                          build, test, and deploy an application written with React + TS → Node.js + Express → MongoDB + Google Firebase → Cloudinary
                         </label>
                         <div>
                           <div class="labels">
@@ -187,6 +208,7 @@
                             <a rel="external" class="label" href="https://www.npmjs.com/package/@types/node">@types/node</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/@types/react">@types/react</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/@types/react-dom">types/react-dom</a>
+                            <a rel="external" class="label" href="https://www.npmjs.com/package/@material-ui/core">@material-ui/core</a>
                             <a rel="external" class="label" href="https://www.emailjs.com/">emailjs-com</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/firebase">firebase</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/node-sass">node-sass</a>
@@ -194,6 +216,8 @@
                             <a rel="external" class="label" href="https://www.npmjs.com/package/react-loader-spinner">react-loader-spinner</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/react-simple-chatbot">react-simple-chatbot</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/react-spinners">react-spinners</a>
+                            <a rel="external" class="label" href="https://www.npmjs.com/package/history">history</a>
+                            <a rel="external" class="label" href="https://www.npmjs.com/package/formik">formik</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/react-yandex-share">react-yandex-share</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/styled-components">styled-components</a>
                             <a rel="external" class="label" href="https://www.npmjs.com/package/swiper">swiper</a>
@@ -220,12 +244,144 @@
 													<a rel="external" class="label" href="https://www.npmjs.com/package/eslint-plugin-react-hooks">eslint-plugin-react-hooks</a>
 												</div>
 											</li>
-                      <li>integrate with third parties (e.g. firebase for authentication etc.)</li>
+                      <li>make the app beautiful, themable (using Material UI and Ant Design)</li>
+                      <li>integrate with third parties (e.g. firebase for authentication, cloudinary for load photo etc.)</li>
+
+                      <li>
+                        <p>
+                          <strong>Completed projects</strong>
+                          at 
+                          <strong>RS React Course</strong>
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              A 2048 game build with React + Typescript. Hooks, Audio API:
+                              <a href="https://github.com/funfordima/react-game" rel="external">
+                                <strong>The Game 2048</strong>
+                              </a>
+                            </p>
+                            <ul>
+                              <li>
+                                implemented the game with React Transition Group for animations
+                              </li>
+                              <li>
+                                used Howler for Audio and Music
+                              </li>
+                              <li>
+                                the game has a statistics and settings page where the user can change three different game options
+                              </li>
+                              <li>
+                                implemented autoplay
+                              </li>
+                              <li>
+                                used Jest for unit tests
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-6">
+                                <label for="project-6" class="summary">
+                                  Technologies stack:
+                                </label>
+                                <div class="labels">
+                                  <p class="label">React + TypeScript</p>
+                                  <p class="label">Styled Components + Hooks</p>
+                                  <p class="label">Jest (unit-tests)</p>
+                                  <p class="label">React Transition Group + Howler + Matrix Rotate</p>
+                                  <p class="label">ESLint (code linted with eslint-config-airbnb)</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p>
+                             App for travelers
+                             <a href="https://github.com/tv-dem/travel-app" rel="external">
+                               <strong>Travel App</strong>
+                             </a>
+                            </p>
+                             <ul>
+                               <li>
+                                app contains: main page, country page and settings
+                               </li>
+                               <li>
+                                user can search by country and see sights
+                               </li>
+                               <li>
+                                photo and video gallery implemented
+                               </li>
+                               <li>
+                                 created weather, time and exchange rate informer
+                               </li>
+                               <li>
+                                displaying data on the map (written with LeafletJS)
+                               </li>
+                               <li>
+                                the application used its own API
+                               </li>
+                               <li class="details">
+                                 <input type="checkbox" id="project-6">
+                                 <label for="project-6" class="summary">
+                                   Technologies stack:
+                                 </label>
+                                 <div class="labels">
+                                   <p class="label">React + TypeScript</p>
+                                   <p class="label">Styled Components + Hooks</p>
+                                   <p class="label">Redux</p>
+                                   <p class="label">Material UI</p>
+                                   <p class="label">LeafletJS</p>
+                                   <p class="label">ESLint (code linted with eslint-config-airbnb)</p>
+                                 </div>
+                               </li>
+                             </ul>
+                           </li>
+
+                          <li>
+                           <p>
+                            App for learning foreign words
+                            <a href="https://github.com/funfordima/react-rslang-be" rel="external">
+                              <strong>RS Lang API</strong>
+                            </a>
+                           </p>
+                            <ul>
+                              <li>
+                                created API to get data about the words, users, statistics (written with ExpressJS + JWT + MongoDB)
+                              </li>
+                              <li>
+                                application structure: home page, electronic textbook with dictionary, statistics page, settings page
+                              </li>
+                              <li>
+                                created mini-games "Savannah", "Audio call", "Sprint", "Own game"
+                              </li>
+                              <li>
+                                used Jest for unit tests
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-6">
+                                <label for="project-6" class="summary">
+                                  Technologies stack:
+                                </label>
+                                <div class="labels">
+                                  <p class="label">React + TypeScript</p>
+                                  <p class="label">Styled Components + Hooks</p>
+                                  <p class="label">Redux</p>
+                                  <p class="label">Connected React Router + History</p>
+                                  <p class="label">Ant Design</p>
+                                  <p class="label">React Transition Group</p>
+                                  <p class="label">ESLint (code linted with eslint-config-airbnb)</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </li>
+
                       <li>
                         <p>
                           <strong>Completed projects</strong>
                            at 
-                           <strong>RS School</strong>
+                           <strong>RS JS Course</strong>
                         </p>
                         <ul>
                           <li>
@@ -233,12 +389,12 @@
                             <a href="https://github.com/funfordima/covid-dashboard" rel="external">
                               <strong>Covid-Dashboard</strong>
                             </a>
-                            (JS, SASS, Chart.js, Yandex-Maps)
+                            (written with JS, SASS, Chart.js, Yandex-Maps)
                           </li>
                           <li>
                             Clone of the International Medical Platform
                             <a href="https://github.com/funfordima/rsclone" rel="external">
-                              <strong>Rc-clone 103.ua</strong>
+                              <strong>Rs-clone 103.ua</strong>
                             </a>
                             (used React + TS, React Hooks -> express.js -> firebase)
                           </li>
@@ -268,30 +424,6 @@
                           </li>        
                         </ul>
                       </li>
-                      <li>
-                        <p>
-                          <strong>Projects will be implemented</strong>
-                           at 
-                          <strong>RS React Course</strong>
-                        </p>
-                        <ul>
-                          <li>
-                            React-games like that:
-                            <a href="https://reactjsexample.com/a-rock-paper-scissors-game-built-with-react-scss/" rel="external">
-                              <strong>A Rock paper scissors game</strong>
-                            </a>
-                            <a href="https://reactjsexample.com/react-app-with-cartoon-animations-and-games-for-kids/" rel="external">
-                              <strong>Teddy games</strong>
-                            </a>
-                          </li>
-                          <li>
-                            App for learning foreign words
-                            <a href="https://www.essentialenglish.review/apps/4000-essential-english-words-1/unit-1-the-lion-and-the-rabbit/#0" rel="external">
-                              <strong>RS Lang</strong>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -319,8 +451,8 @@
                         </p>
                         <ul>
                           <li class="details">
-                            <input type="checkbox" id="project-2">
-                            <label for="project-2" class="summary">
+                            <input type="checkbox" id="project-3">
+                            <label for="project-3" class="summary">
                               Studied HTML CSS
                             </label>
                             <div class="labels">
@@ -332,8 +464,8 @@
                             </div>
                           </li>
                           <li class="details">
-                            <input type="checkbox" id="project-2">
-                            <label for="project-2" class="summary">
+                            <input type="checkbox" id="project-3">
+                            <label for="project-3" class="summary">
                               Studied JavaScript
                             </label>
                             <div class="labels">
@@ -345,8 +477,8 @@
                             </div>
                           </li>
                           <li class="details">
-                            <input type="checkbox" id="project-2">
-                            <label for="project-2" class="summary">
+                            <input type="checkbox" id="project-3">
+                            <label for="project-3" class="summary">
                               Watched hundreds of videos
                             </label>
                             <div class="labels">
@@ -386,6 +518,21 @@
                               </sup>
                             </p>
                           </li>
+                          <li>
+                            <p>
+                              <em>02</em> 2021 - <strong>RS School: JS/FrontEnd</strong>
+                              <sup>
+                                <em>(here's my 
+                                  <a href="./assets/documents/rs.pdf" rel="external">
+                                    <strong>certificate</strong>
+                                  </a>)
+                                </em>
+                              </sup>
+                            </p>
+                          </li>
+                          <li>
+                            <em>04</em> 2021 - <strong>Ciklum: JavaScript Internship</strong>
+                          </li>
                         </ul>
                       </li>
                       <li>
@@ -393,24 +540,133 @@
                           <strong>Code Examples</strong>
                         </p>
                         <ul>
+
                           <li>
-                            App with React Hooks
-                            <a href="https://github.com/funfordima/react-app-todos" rel="external">
-                              <strong>ToDo</strong>
-                            </a>
+                            <p>
+                              Pure JavaScript (ES6, ES next, async/await, SASS) with Babel transpiler
+                              <a href="https://github.com/funfordima/ciklum-calendar" rel="external">
+                                <strong>Meeting planning calendar</strong>
+                              </a>
+                            </p>
+                            <ul>
+                              <li>
+                                display meetings planned
+                              </li>
+                              <li>
+                                implemented filter meetings for a particular team member
+                              </li>
+                              <li>
+                                implemented CRUD operations with Events or Participants
+                              </li>
+                              <li>
+                                implemented Drag n' drop events
+                              </li>
+                              <li>
+                                written with Singleton, Decorator and EventEmitter
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-6">
+                                <label for="project-6" class="summary">
+                                  Technologies stack:
+                                </label>
+                                <div class="labels">
+                                  <p class="label">HTML + SCSS</p>
+                                  <p class="label">Pure JS</p>
+                                  <p class="label">Jest (unit-tests)</p>
+                                  <p class="label">ESLint (code linted with eslint-config-airbnb)</p>
+                                </div>
+                              </li>
+                            </ul>
                           </li>
+                          
                           <li>
-                            Pure JavaScript (ES6, ES next, async/await, SASS) with Babel transpiler
-                            <a href="https://github.com/funfordima/ciklum-calendar" rel="external">
-                              <strong>Meeting planning calendar</strong>
-                            </a>
+                            <p>
+                              Buy books easily from anywhere in the world.
+                              <a href="https://github.com/funfordima/book-store" rel="external">
+                                <strong>Online Book Store</strong>
+                              </a>
+                            </p>
+                            <ul>
+                              <li>
+                                Book store have four screens: "Login", "Catalog", "Book details", and "Cart"
+                              </li>
+                              <li>
+                                "Login": on this screen user can log in with username, than system redirects user to the Book catalog.
+                              </li>
+                              <li>
+                                "Catalog": on this screen user can see the list of books, search book by name and filter them by the price.
+                              </li>
+                              <li>
+                                "Book details": on this screen user can choose the needed count of books, sees the total price, and adds the book to the "Cart"
+                              </li>
+                              <li>
+                                "Cart": on this screen user can see order list and press 'Purchase' button to buying ordered books. System place order.
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-6">
+                                <label for="project-6" class="summary">
+                                  Using technologies:
+                                </label>
+                                <div class="labels">
+                                  <p class="label">React + Typescript</p>
+                                  <p class="label">Redux</p>
+                                  <p class="label">Jest (unit-tests)</p>
+                                  <p class="label">ESLint (code linted with eslint-config-airbnb)</p>
+                                </div>
+                              </li>
+                            </ul>
                           </li>
+                          
                           <li>
-                            Weather App
-                            <a href="https://github.com/funfordima/weatherApp" rel="external">
-                              <strong>Weather App</strong>
-                            </a>
-                          </li>       
+                            <p>
+                              API for
+                              <a href="https://github.com/funfordima/api-travel-app" rel="external">
+                                <strong>Travel-app</strong>
+                              </a>
+                            </p>
+                            <ul>
+                              <li>
+                                created API to get data about the country (written with MongoDB)
+                              </li>
+                              <li>
+                                created authorization functionality
+                              </li>
+                              <li>
+                                add functionality for loading and saving user photos
+                              </li>
+                              <li>
+                                <p>
+                                  deploy server on
+                                  <a href="https://api-travel-app.herokuapp.com/" rel="external">
+                                    <strong>Heroku</strong>
+                                  </a>
+                                </p>
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-5">
+                                <label for="project-5" class="summary">
+                                  Endpoints:
+                                </label>
+                                <div class="labels">
+                                  <p class="label">/countries</p>
+                                  <p class="label">/countries/{id}</p>
+                                  <p class="label">/auth/users</p>
+                                </div>
+                              </li>
+                              <li class="details">
+                                <input type="checkbox" id="project-7">
+                                <label for="project-7" class="summary">
+                                  Tech stack:
+                                </label>
+                                <div class="labels">
+                                  <a rel="external" class="label" href="https://www.npmjs.com/package/typescript">nodejs + typescript</a>
+                                  <a rel="external" class="label" href="https://www.npmjs.com/package/express">expressjs</a>
+                                  <a rel="external" class="label" href="https://www.npmjs.com/package/mongodb">mongodb</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+
                         </ul>
                       </li>
                     </ol>
@@ -432,11 +688,14 @@
                           built, tested and discovered Georgian cuisine in Kharkiv
                         </label>
                         <div class="labels">
-                          <a rel="external" class="label" href="https://www.instagram.com/p/BsBlK6RHCgk/?utm_source=ig_web_copy_link">my-team</a>
-                          <a rel="external" class="label" href="https://www.instagram.com/p/BsnnMz7ncPl/?utm_source=ig_web_copy_link">our's-kitchen</a>
-                          <a rel="external" class="label" href="https://www.instagram.com/p/Bu3epDBHYvX/?utm_source=ig_web_copy_link">Valentains-Day</a>
-                          <a rel="external" class="label" href="https://www.instagram.com/p/Bu_VxjPHfKe/?utm_source=ig_web_copy_link">some-wine</a>
-                          <a rel="external" class="label" href="https://www.instagram.com/p/BxrnVCdIyjU/?utm_source=ig_web_copy_link">moment</a>
+                          <a id="restaurant" href="#restaurant__photos" title="Show restaurant photos" class="label">
+                            <span class="dots">
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                            </span>
+                            <em>sometimes i miss that time...</em>
+                          </a>
                         </div>
                       </li>
                     </ul>
@@ -503,6 +762,7 @@
                         <div>
                           <ul>
                             <li>built website using HTML, CSS, PHP</li>
+                            <li>worked with a factory that produced air sofa in China</li>
                             <li>started going to the gym 🏋🏽</li>
                           </ul>
                         </div>
@@ -519,7 +779,7 @@
                     </p>
                     <p>
                       <strong>Was hired</strong> 
-                      by Web Designer 
+                      by HTML coder 
                       <strong>
                         <a href="https://vk.com/kakao_art" rel="external">
                           Website development studio: "KAKAO ART"
@@ -541,7 +801,8 @@
                           at 
                           <strong>
                             Restaurant 
-                            <em>"Blinoff"</em> 
+                            <em>"Blinoff"</em>
+                            <em>"NHL"</em>
                             Kharkiv
                           </strong>
                         </label>
@@ -605,7 +866,7 @@
                       <strong>
                         <a href="https://goo.gl/maps/f3hsFjJ3f7Y2QsTNA" rel="external">Kharkiv</a>
                       </strong> 
-                      <sup><em id="kharkiv-rent-months">paid 204 months of rent already</em></sup>
+                      <sup><em id="kharkiv-rent-months"></em></sup>
                     </p>
 									</li>
                   <li>
@@ -658,11 +919,12 @@
               <section>
 								<h3>Skills</h3>
 								<p class="tags small">
-                  HTML CSS JS UI/UX A11Y SEO REACT WEBPACK NODEJS NPM BOOTSTRAP 
+                  HTML CSS JS UI/UX A11Y SEO REACT EXPRESSJS TYPESCRIPT
+                  JEST WEBPACK NODEJS NPM BOOTSTRAP ANT DESIGN
                   <span class="nowrap">SEMANTIC UI</span> 
-                  LESS SASS CSS-IN-JS PRETTIER ESLINT 
-                  <span class="nowrap">MICROSOFT OFFICE</span> 
-                  PHOTOSHOP ILLUSTRATOR PHP DELPHI WINDOWS
+                  LESS SASS PRETTIER ESLINT CLOUDINARY
+                  <span class="nowrap">DELPHI</span> 
+                  PHOTOSHOP ILLUSTRATOR
                 </p>
 							</section>
               <!-- Character -->
@@ -739,6 +1001,12 @@
                   </span>
                   <span class="tag">
                     TO LEARN MORE 
+                  </span>
+                  <span class="tag">
+                    TO BE A MILLIONAIRE 
+                  </span>
+                  <span class="tag">
+                    TO HAVE A NEW CAR 
                   </span>
                 </p>
 							</section>
